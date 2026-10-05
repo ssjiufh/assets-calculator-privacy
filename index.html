@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 资产计算器 Assets Calculator</title>
+<style>
+  :root { --fg:#1d1d1f; --sub:#6e6e73; --bg:#ffffff; --line:#e5e5ea; --accent:#0071e3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#f5f5f7; --sub:#a1a1a6; --bg:#1b1b1f; --line:#2f2f34; --accent:#2997ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; padding:0 20px 64px; background:var(--bg); color:var(--fg);
+    font:16px/1.75 -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { padding: 48px 0 24px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 30px; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .meta { color: var(--sub); font-size: 14px; }
+  h2 { font-size: 20px; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  .lang { display:flex; gap:8px; margin: 20px 0 0; }
+  .lang button {
+    border:1px solid var(--line); background:transparent; color:var(--fg);
+    border-radius:999px; padding:6px 16px; font-size:14px; cursor:pointer;
+  }
+  .lang button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .box { background:rgba(125,125,135,.08); border-radius:12px; padding:16px 20px; margin:16px 0; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:14px; }
+  [data-lang="en"] { display:none; }
+  body.en [data-lang="zh"] { display:none; }
+  body.en [data-lang="en"] { display:block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1><span data-lang="zh">隐私政策</span><span data-lang="en">Privacy Policy</span></h1>
+    <div class="meta">
+      <span data-lang="zh">资产计算器（Assets Calculator）· 最后更新：2026 年 9 月 22 日</span>
+      <span data-lang="en">Assets Calculator · Last updated: September 22, 2026</span>
+    </div>
+    <div class="lang">
+      <button id="bZh" class="on">中文</button>
+      <button id="bEn">English</button>
+    </div>
+  </header>
+
+  <div data-lang="zh">
+    <div class="box">
+      <strong>一句话说明：本应用完全离线运行，不收集、不上传、不共享你的任何数据。</strong>
+      你录入的资产信息只保存在你自己的设备上。
+    </div>
+
+    <h2>1. 我们收集哪些数据</h2>
+    <p>不收集。本应用没有账号系统、没有服务器、没有后台接口，也不会向任何服务器发送你录入的内容。你在应用里输入的资产名称、金额、分组、历史记录，全部保存在设备本地。</p>
+
+    <h2>2. 数据存在哪里</h2>
+    <ul>
+      <li><strong>iOS / iPadOS</strong>：保存在应用沙盒内的本地存储中，随应用卸载而删除。</li>
+      <li><strong>macOS</strong>：保存在应用沙盒内的本地存储中；若你主动使用了「导出」功能，文件会写入你自己选择的位置，由你自行管理。</li>
+      <li>macOS 版会记住你上次导出文件的位置（仅一个文件书签），目的是让你再次保存时不用重新选择路径。这个信息同样只存在本机，不会离开你的设备。</li>
+    </ul>
+
+    <h2>3. 第三方与分析</h2>
+    <p>没有。本应用不含任何第三方 SDK，不含广告，不含数据统计、崩溃上报或用户行为追踪代码，也不使用 App Tracking Transparency 所涉及的追踪能力。</p>
+
+    <h2>4. 网络访问</h2>
+    <p>本应用不需要联网即可使用全部功能，也不会主动发起任何网络请求。macOS 版申请的网络权限仅供系统渲染网页界面使用，不对外传输数据。</p>
+
+    <h2>5. 权限</h2>
+    <p>除 macOS 版在你主动点击「导出 / 导入」时读写你自己选择的文件外，本应用不申请相机、麦克风、定位、通讯录、照片库等任何权限。</p>
+
+    <h2>6. 儿童隐私</h2>
+    <p>本应用不面向 13 岁以下儿童，也不会有意收集儿童的任何个人信息。</p>
+
+    <h2>7. 数据删除</h2>
+    <p>你可以在应用内使用「清空」功能一键删除全部本地数据；卸载应用也会一并删除所有本地数据。由于数据从未上传，我们无法也无需在服务端为你删除任何内容。</p>
+
+    <h2>8. 政策变更</h2>
+    <p>若未来政策有变更，会在此页面更新，并在应用新版本中说明。</p>
+
+    <h2>9. 联系我们</h2>
+    <p>如有疑问，请通过 App Store 页面上的开发者联系方式与我们联系。</p>
+  </div>
+
+  <div data-lang="en">
+    <div class="box">
+      <strong>In short: This app runs entirely offline. It does not collect, upload, or share any of your data.</strong>
+      Everything you enter stays on your own device.
+    </div>
+
+    <h2>1. Data We Collect</h2>
+    <p>None. There is no account system, no server, and no backend. The asset names, amounts, groups, and history you enter are stored locally on your device and never transmitted anywhere.</p>
+
+    <h2>2. Where Data Is Stored</h2>
+    <ul>
+      <li><strong>iOS / iPadOS</strong>: Stored inside the app sandbox's local storage, and removed when the app is deleted.</li>
+      <li><strong>macOS</strong>: Stored inside the app sandbox's local storage. If you use the Export feature, the file is written to a location you choose and managed by you.</li>
+      <li>The macOS version remembers the location of your last exported file (a single file bookmark) so you don't have to pick the path again. This also stays on your device only.</li>
+    </ul>
+
+    <h2>3. Third Parties and Analytics</h2>
+    <p>None. The app contains no third-party SDKs, no advertising, and no analytics, crash reporting, or behavioral tracking code. It does not use any tracking capability covered by App Tracking Transparency.</p>
+
+    <h2>4. Network Access</h2>
+    <p>All features work without an internet connection, and the app initiates no network requests. The network entitlement requested by the macOS build is used only by the system to render the app interface; no data leaves your device.</p>
+
+    <h2>5. Permissions</h2>
+    <p>Apart from reading and writing the files you explicitly choose via Export / Import on macOS, the app requests no camera, microphone, location, contacts, or photo library access.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>The app is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+    <h2>7. Deleting Your Data</h2>
+    <p>Use the in-app Clear function to erase all local data at once, or simply delete the app. Because your data is never uploaded, there is nothing for us to delete on a server.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>If this policy changes, the updated version will be published on this page and noted in a new app release.</p>
+
+    <h2>9. Contact</h2>
+    <p>For questions, please reach us through the developer contact information shown on the App Store page.</p>
+  </div>
+
+  <footer>
+    <span data-lang="zh">资产计算器 · Assets Calculator</span>
+    <span data-lang="en">Assets Calculator</span>
+  </footer>
+
+</div>
+<script>
+  var bZh = document.getElementById('bZh'), bEn = document.getElementById('bEn');
+  function setLang(en) {
+    document.body.classList.toggle('en', en);
+    bZh.classList.toggle('on', !en);
+    bEn.classList.toggle('on', en);
+    document.documentElement.lang = en ? 'en' : 'zh-CN';
+  }
+  bZh.onclick = function () { setLang(false); };
+  bEn.onclick = function () { setLang(true); };
+  if (navigator.language && navigator.language.indexOf('en') === 0) setLang(true);
+</script>
+</body>
+</html>
